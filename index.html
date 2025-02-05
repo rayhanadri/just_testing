@@ -37,28 +37,101 @@
   </head>
   <style>
     .jumbotron {
-        margin-top: 10px;
+      margin: 10px;
+    }
+
+    .card {
+      margin: 10px;
     }
   </style>
   <body>
-    <div clas="container-fluid">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
-          </p>
-          <hr class="my-4" />
-          <p>
-            It uses utility classes for typography and spacing to space content
-            out within the larger container.
-          </p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Learn more</a
-            >
-          </p>
+    <div clas="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+              This is a simple hero unit, a simple jumbotron-style component for
+              calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+              It uses utility classes for typography and spacing to space
+              content out within the larger container.
+            </p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button"
+                >Learn more</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Featured</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Form Fill</div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Masukkan nama"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="role">Role</label>
+                  <select class="custom-select" id="role">
+                    <option value="Front End Engineer">
+                      Front End Engineer
+                    </option>
+                    <option value="Back End Engineer">Back End Engineer</option>
+                    <option value="Full Stack Engineer">
+                      Full Stack Engineer
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="availability">Availability</label>
+                  <select class="custom-select" id="availability">
+                    <option value="Full Time">Full Time</option>
+                    <option value="Part Time">Part Time</option>
+                    <option value="Internship">Internship</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="usia">Usia</label>
+                  <input type="text" class="form-control" id="usia" />
+                </div>
+                <div class="form-group">
+                  <label for="lokasi">Lokasi</label>
+                  <input type="text" class="form-control" id="lokasi" />
+                </div>
+                <div class="form-group">
+                  <label for="experience">Your Experience</label>
+                  <input type="text" class="form-control" id="experience" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
